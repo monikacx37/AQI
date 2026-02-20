@@ -55,6 +55,7 @@ def put_hotweatherdata():
     TAB_NAME = 'aqi'
 
     creds_json = os.environ.get("GSHEET_CREDENTIALS")
+    print("Type of creds_json:", type(creds_json))
     if not creds_json:
         raise ValueError("GSHEET_CREDENTIALS not found")
 
@@ -82,3 +83,4 @@ def put_hotweatherdata():
     )
 
     print("✅ Data loaded successfully to Google Sheets!")
+
