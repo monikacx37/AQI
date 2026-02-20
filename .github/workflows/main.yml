@@ -27,4 +27,4 @@ jobs:
         env:
           GSHEET_CREDENTIALS: ${{ secrets.GSHEET_CREDENTIALS }}
         run: |
-          python aqui_crawler.py
+          python air_index.py
